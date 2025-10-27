@@ -124,7 +124,7 @@ p {
 
 
 /***** Staff Page *****/
-.staffList {
+.itemList {
     display: flex;
     flex-direction: column;
 
@@ -134,7 +134,8 @@ p {
     margin-top: 1%;
     margin-bottom: 1%;
 }
-.staffProfileL {
+
+.staffProfile {
     background-color: hsla(0, 0%, 0%, 0.6);
     display: flex;
 
@@ -144,19 +145,11 @@ p {
     margin-top: 2%;
 }
 
-.staffProfileR {
-    background-color: hsla(0, 0%, 0%, 0.6);
-    display: flex;
-
-    align-self: center;
-    width: 80%;
-    height: 35%;
-    margin-top: 2%;
-}
-
-.staffImage {
+div.staffProfile img {
     margin: 1%;
 }
+
+
 .staffText {
     margin: 3%;
     text-align: left;
@@ -170,3 +163,123 @@ p {
  p.staffText {
     font-size: 20px;
  }
+
+/***** Collection Page *****/
+.collectionList {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+
+    position: static;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.itemProfile {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    display: flex;
+
+    align-self: center;
+    width: 80%;
+    height: 35%;
+    margin-top: 2%;
+}
+
+div.itemProfile img {
+    margin: 1%;
+}
+
+
+.itemText {
+    margin: 3%;
+    text-align: left;
+    width: 75%;
+    display: flex;
+}
+.itemText div {
+    margin: 10px;
+}
+
+.itemText h2 {
+    text-align: left;
+    margin: 10px 50px;
+}
+
+h1 {
+    color: white;
+}
+
+/***** Shop Template style (Alter)!!! *****/
+.shop-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+    .souvenir-item {
+      width: 250px;
+      background-color: #ffffff;
+      border: 2px solid #222;
+      padding: 10px;
+      border-radius: 6px;
+      position: relative;
+    }
+
+    .souvenir-item img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .souvenir-item input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .souvenir-item button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 8px;
+      font-weight: bold;
+      background-color: #30336b;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .souvenir-item button:hover {
+      background-color: #130f40;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      margin: 10% auto;
+      padding: 20px;
+      background-color: #fff;
+      width: 60%;
+      border-radius: 8px;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+    }
+
+    .close-modal {
+      float: right;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #444;
+    }
