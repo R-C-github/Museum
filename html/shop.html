@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Shop | MASO</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="Rick C">
-        <meta name="robots" content="noindex, nofollow">
-        <link href="../css/style.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap">
-    </head>
-    <body>
-        <header>
-            <p class="topBar">Museum of Antarctic Supernatural Occurrences</p>
-            <nav>
-                <button onclick="location.href='../index.html'">Home</button>
-                <button onclick="location.href='../html/staff.html'">Staff</button>
-                <button onclick="location.href='../html/collections.html'">Collections</button>
-                <button onclick="location.href='../html/shop.html'">Shop</button>
-            </nav>
-        </header>
+  <head>
+    <title>Shop | MASO</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Rick C">
+      <meta name="robots" content="noindex, nofollow">
+      <link href="../css/style.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap">
+  </head>
+  <body>
+    <header>
+      <p class="topBar">Museum of Antarctic Supernatural Occurrences</p>
+        <nav>
+            <button onclick="location.href='../index.html'">Home</button>
+            <button onclick="location.href='../html/staff.html'">Staff</button>
+            <button onclick="location.href='../html/collections.html'">Collections</button>
+            <button onclick="location.href='../html/shop.html'">Shop</button>
+        </nav>
+    </header>
         
-        <main>
-            <header>
-    <h1>Souvenir Shop</h1>
-  </header>
+    <main>
+      <h1 class="shop">Souvenir Shop</h1>
+      
+      <div class="shop-container"> 
 
-  <div class="shop-container"> 
+        <!-- Item 1 -->
+        <div class="souvenir-item" data-id="item001" title="The Aurora Disk Object Keychain!">
+          <img src="../images/shop/AuroraDiskObjectKeyChain.png" alt="A product image of a short silver keychain with a flat image of the Aurora Disk Object sitting in the snow" onclick="openModal(this)" />
+          <h3>UFO Keychain</h3>
+          <p>Get your own tiny keychain of the Aurora Disk Object, this is a great souviner to take back with you!</p>
+          <p><strong>Price:</strong> $10.00</p>
+          <button onclick="addToCart('item001')">Add Aurora Disk Object Keychain to Cart</button>
+        </div><!-- End of Item 1 -->
 
-    <!-- Item 1 -->
-    <div class="souvenir-item" data-id="item001" title="The UFO Keychain!">
-      <img src="../images/collection/AuroraDiskObject.png" alt="" onclick="openModal(this)" />
-      <h3>UFO Keychain</h3>
-      <p>Get your own tiny keychain of the Aurora Disk Object, this Magnetic artists rendition of the blurry UFO footage is a great souviner to take back with you!</p>
-      <p><strong>Price:</strong> $10.00</p>
-      <button onclick="addToCart('item001')">Add Aurora Disk Object Keychain to Cart</button>
-    </div><!-- End of Item 1 -->
+        <!-- Item 2 -->
+        <div class="souvenir-item" data-id="item002" title="The Aurora Australis Anomaly Plush!">
+          <img src="../images/shop/AuroraAstralisAnomalyPlush.png" alt="Product image of a medium-sized stuffed plushie of a cartoon depiction of the Aurora Australis Anomaly with black fur with green streaks." onclick="openModal(this)" />
+          <h3>Aurora Australis Anomaly Plush</h3>
+          <p>A friendly replica of the Aurora Australis Anomaly, it's soft and glows in the dark!</p>
+          <p><strong>Price:</strong> $20.00</p>
+          <button onclick="addToCart('item001')">Add Aurora Australis Anomaly Plush to Cart</button>
+        </div><!-- End of Item 2 -->
 
-    <!-- Item 2 -->
-    <div class="souvenir-item" data-id="item002" title="The Aurora Australis Anomaly Plush!">
-      <img src="../images/collection/AuroraAustralisAnomaly.png" alt="Product image of a medium-sized stuffed animal of a cartoon depiction of the Aurora Australis Anomaly" onclick="openModal(this)" />
-      <h3>Aurora Australis Anomaly Plush</h3>
-      <p>Listing Description</p>
-      <p><strong>Price:</strong> $20.00</p>
-      <button onclick="addToCart('item001')">Add Aurora Australis Anomaly Plush to Cart</button>
-    </div><!-- End of Item 2 -->
+        <!-- Item 3 -->
+        <div class="souvenir-item" data-id="item003" title="The South Pole Orb Magnetic Replica!">
+          <img src="../images/shop/TheSouthPoleOrbReplica.png" alt="Product image of a magnetic replica of the South Pole Orb flowing above a black electric base with blue, green, and purple LEDs." onclick="openModal(this)" />
+          <h3>Specimen 013</h3>
+          <p>A small replica of The South Pole Orb, plug it in and see it float like the real thing!</p>
+          <p><strong>Price:</strong> $30.00</p>
+          <button onclick="addToCart('item001')">Add The South Pole Orb to Cart</button>
+        </div><!-- End of Item 3 -->
 
-    <!-- Item 3 -->
-    <div class="souvenir-item" data-id="item003" title="The South Pole Orb Magnetic Replica!">
-      <img src="../images/collection/TheSouthPoleOrb.png" alt="The South Pole Orb" onclick="openModal(this)" />
-      <h3>Specimen 013</h3>
-      <p>A small replica of The South Pole Orb, plug it in and see it float like the real thing!</p>
-      <p><strong>Price:</strong> $30.00</p>
-      <button onclick="addToCart('item001')">Add The South Pole Orb to Cart</button>
-    </div><!-- End of Item 3 -->
+        <!-- Item 4 -->
+        <div class="souvenir-item" data-id="item004" title="The Fallen Star Keychain!">
+          <img src="../images/shop/FallenStarKeyChain.png" alt="Product image of a black ball containing coloration that looks like the Aurora Australis on a short silver keychain." onclick="openModal(this)" />
+          <h3>Fallen Star Keychain</h3>
+          <p>Get your own tiny keychain replica of the mysterious Fallen star, it glows in the dark!</p>
+          <p><strong>Price:</strong> $10.00</p>
+          <button onclick="addToCart('item001')">Add The Fallen Star to Cart</button>
+        </div><!-- End of Item 4 -->
 
-    <!-- Item 4 -->
-    <div class="souvenir-item" data-id="item004" title="The Fallen Star Keychain!">
-      <img src="../images/collection/FallenStar.png" alt="" onclick="openModal(this)" />
-      <h3>Fallen Star Keychain</h3>
-      <p>Get your own tiny keychain of the mysterious Fallen star!</p>
-      <p><strong>Price:</strong> $10.00</p>
-      <button onclick="addToCart('item001')">Add The Fallen Star to Cart</button>
-    </div><!-- End of Item 4 -->
-
-  </div> <!-- End of Shop container -->
-  
+      </div> <!-- End of Shop container -->
+    </main>
+        
 
   <!-- MODAL -->
   <div class="modal" id="modal">
