@@ -22,6 +22,7 @@
         <nav class="subPage">
             <button onclick="showSection('anthropology')">Anthropology</button>
             <button onclick="showSection('archeology')">Archeology</button>
+            <button onclick="showSection('histories')">Histories</button>
         </nav>
         <main class="collectionList">
         
@@ -29,7 +30,7 @@
                 <h1>Anthropology</h1>
                 <!-- Item 1 -->
                 <div class="itemProfile">
-                    <img src="../images/collection/Specimen47.png" alt="43 particulate pieces of Specimen 47 on a mircosope slide.">
+                    <img src="../images/collection/Specimen47.png" alt="43 particulate pieces of Specimen 47 on a mircosope slide."   class="open-modal" data-modal-target="#modal-text-AA-47">
                     <div class="itemText">
                         <div>
                             <h2>Artifact Designation: MASO-1984-AA-47</h2>
@@ -88,7 +89,7 @@
 
                 <!-- Item 2 -->
                 <div class="itemProfile">
-                    <img src="../images/collection/AuroraAustralisAnomaly.png" alt="A image of a glowing silhouette of a person standing in the Antarctic snow under the Aurora Australis.">
+                    <img src="../images/collection/AuroraAustralisAnomaly.png" alt="A image of a glowing silhouette of a person standing in the Antarctic snow under the Aurora Australis." class="open-modal" data-modal-target="#modal-text-AA">
                     <div class="itemText">
                         <div>
                             <h2>Artifact Designation: MASO-1984-AA</h2>
@@ -145,7 +146,7 @@
 
                 <!-- Item 3 -->
                 <div class="itemProfile">
-                    <img src="../images/collection/FootstepsOfAuroraAustralisAnomaly.png" alt="Footsteps in the snow each softly glowing light blue labled 1984 Antarctica" height="250px">
+                    <img src="../images/collection/FootstepsOfAuroraAustralisAnomaly.png" alt="Footsteps in the snow each softly glowing light blue labled 1984 Antarctica" class="open-modal" data-modal-target="#modal-text-AA-FP" onclick="openModal(this)">
                     <div class="itemText">
                         <div>
                             <h2>Artifact Designation: MASO-1984-AA-FP</h2>
@@ -203,11 +204,11 @@
             
 
             <!-- Archeology Items -->
-             <section id="archeology" class="collectionSection">
+             <section id="archeology" class="collectionSection" hidden>
                 <h1>Archeology</h1>
                 <!-- Item 1 -->
                 <div class="itemProfile">
-                    <img src="../images/collection/AuroraDiskObject.png" alt="The green glowing Aurora Disk Object sits in the snow under a clear sky with green Aurora Australis.">
+                    <img src="../images/collection/AuroraDiskObject.png" alt="The green glowing Aurora Disk Object sits in the snow under a clear sky with green Aurora Australis."  class="open-modal" data-modal-target="#modal-text-AUFO">
                     <div class="itemText">
                         <div>
                             <h2>Artifact Designation: MASO-1981-AUFO</h2>
@@ -266,7 +267,7 @@
 
                 <!-- Item 2 -->
                 <div class="itemProfile">
-                    <img src="../images/collection/TheSouthPoleOrb.png" alt="Image of the South Pole Orb floating in a circular observation room, with a skylight showing the Aurora Australis.">
+                    <img src="../images/collection/TheSouthPoleOrb.png" alt="Image of the South Pole Orb floating in a circular observation room, with a skylight showing the Aurora Australis." class="open-modal" data-modal-target="#modal-text-SPH" onclick="openModal(this)">
                     <div class="itemText">
                         <div>
                             <h2>Artifact Designation: MASO-1986-SPH</h2>
@@ -325,7 +326,7 @@
 
                 <!-- Item 3 -->
                 <div class="itemProfile">
-                    <img src="../images/collection/FallenStar.png" alt="Close up image of the Fallen Star glowing under a clear sky with blueish green Aurora Australis.">
+                    <img src="../images/collection/FallenStar.png" alt="Close up image of the Fallen Star glowing under a clear sky with blueish green Aurora Australis." class="open-modal" data-modal-target="#modal-text-FS-23" onclick="openModal(this)">
                     <div class="itemText">
                         <div>
                             <h2>Artifact ID: MASO-1993-FS-23</h2>
@@ -383,23 +384,293 @@
                 </div><!-- End Item 3 -->
             </section>
 
+            <section id="histories" class="collectionSection" hidden>
+
+                <!-- Item 1 -->
+                <div class="itemProfile">
+                    <img src="../images/collection/Specimen47.png" alt="43 particulate pieces of Specimen 47 on a mircosope slide."   class="open-modal" data-modal-target="#modal-text-AA-47">
+                    <div class="itemText">
+                        <div>
+                            <h2>MASO-1984-AA-47 History</h2>
+                            <p>
+                                Discovered in 1984 near the South Pole following the sighting of the Aurora Australis Anomaly (MASO-1984-AA), Specimen 47 consists of minuscule metallic particles that glow faintly with auroral colors during geomagnetic storms. When auroral activity subsides, they revert to a matte gray, nonreflective state. The particulate matter was found embedded within the footprints of the anomaly (MASO-1984-AA-FP) and scattered in the surrounding snow.
+                                <br><br>
+                                Each granule measures only 1–3 millimeters, weighing less than 0.01 grams, yet exhibits remarkable uniformity of shape and composition. Microscopic examination reveals no signs of manufacture, machining, or crystalline formation. The material resists chemical alteration, heat exposure, and mechanical deformation, suggesting properties not present in known terrestrial alloys.
+                                <br><br>
+                                The context of recovery strongly implies a connection to MASO-1984-AA, a semi-luminous figure documented during heightened Aurora Australis activity. Whether the substance originated from the entity itself or accompanied it from an unknown source remains undetermined. Researchers describe the particles as becoming “alive with light” when exposed to auroral frequencies, mirroring the greens, blues, and violets of the Antarctic sky.
+                                <br><br>
+                                Field logs from the 1984 expedition recorded no trace of radioactivity or biological contamination, leading investigators to conclude the material was inert. Yet its ability to remain unchanged for over four decades—retaining both structure and reactivity to auroral light—places it among the most stable anomalous materials on record.
+                                <br><br>
+                                Comparative mythology provides intriguing parallels: numerous circumpolar traditions describe “sky dust” or “fallen lights”—luminous matter said to descend during rare atmospheric phenomena. While such stories are symbolic, they suggest long-standing human attempts to explain natural and supernatural convergence in polar regions.
+                                <br><br>
+                                Specimen 47 remains suspended between categories—a physical object tied to an event that defies physical explanation. Its presence challenges distinctions between observation and belief, reminding viewers that even the smallest trace can alter our understanding of the extraordinary.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- End Item 1 -->
+
+                <!-- Item 2 -->
+                <div class="itemProfile">
+                    <img src="../images/collection/AuroraAustralisAnomaly.png" alt="A image of a glowing silhouette of a person standing in the Antarctic snow under the Aurora Australis." class="open-modal" data-modal-target="#modal-text-AA">
+                    <div class="itemText">
+                        <div>
+                            <h2>MASO-1984-AA History </h2>
+                            <p>
+                                Discovered during an unusually strong display of the Aurora Australis in 1984, MASO-1984-AA remains one of the most perplexing and visually striking anomalies documented in polar research. Witnesses from an international research team described a semi-transparent, human-shaped figure—approximately 1.8 meters in height and 45 kilograms in apparent mass—standing motionless in the snow amid shifting curtains of auroral light. Its surface shimmered with the same chromatic pulses seen in the sky above, suggesting material or energetic correspondence with the aurora itself. When approached, the figure reportedly dissolved, leaving behind distinct humanlike footprints and a faintly luminescent particulate, later catalogued as MASO-1984-AA-47.
+                                <br><br>
+                                The surviving footage, though blurred by low-light interference, provides corroboration of the event but no definitive evidence of material composition. Analysis of the recovered particulate revealed optical and magnetic responses resembling atmospheric plasma residue rather than ice or mineral trace. No known technology or environmental process has since replicated these properties under controlled conditions.
+                                <br><br>
+                                From a comparative standpoint, the entity’s proportions and ephemeral behavior recall mythic “light-beings” described in several circumpolar oral traditions, where luminous figures are said to appear during heightened solar activity. While such parallels are speculative, they suggest that MASO-1984-AA may belong to a broader cultural and natural continuum in which intense geomagnetic phenomena are perceived as animated or sentient forms.
+                                <br><br>
+                                Psychological interviews conducted with surviving witnesses indicate a consistent sense of calm curiosity rather than fear, perhaps reflecting the anomaly’s passive stance and lack of direct engagement. This emotional uniformity contributes to ongoing debates within anomaly research regarding the potential cognitive or perceptual effects of high-intensity auroral exposure.
+                                <br><br>
+                                The current hypothesis situates MASO-1984-AA as a transient energetic formation shaped by local geomagnetic and atmospheric conditions, yet its humanoid symmetry and autonomous motion remain unexplained. With only a single confirmed sighting, all conclusions remain provisional.
+                                <br><br>
+                                Preserved through archival film, particulate samples, and contemporary documentation, MASO-1984-AA stands as a reminder of the boundary between environmental science and the unknown—a luminous intersection where natural forces briefly adopt familiar form and human curiosity meets the limits of empirical certainty.
+
+                            </p>
+                        </div>
+                
+                    </div>
+                </div><!-- End Item 2 -->
+
+                <!-- Item 3 -->
+                <div class="itemProfile">
+                    <img src="../images/collection/FootstepsOfAuroraAustralisAnomaly.png" alt="Footsteps in the snow each softly glowing light blue labled 1984 Antarctica" class="open-modal" data-modal-target="#modal-text-AA-FP" onclick="openModal(this)">
+                    <div class="itemText">
+                        <div>
+                            <h2>MASO-1984-AA-FP History</h2>
+                            <p>
+                                In 1984, during an intense display of the Aurora Australis, researchers stationed near the South Pole documented the appearance of a semi-transparent, humanoid figure later classified as MASO-1984-AA. When the luminous form vanished, investigators discovered a trail of footprints pressed into the snow—irregular, oval impressions unlike those made by human boots or local fauna. The prints, now designated MASO-1984-AA-FP, are considered the only verifiable physical evidence associated with the anomaly.
+                                <br><br>
+                                Each footprint measured roughly 20 by 10 centimeters, with depth and pressure patterns indicating a being weighing approximately 45 kilograms (100 lbs). The snow within and surrounding the impressions contained traces of MASO-1984-AA-47, a fine, luminescent particulate also recovered from the anomaly’s disappearance site. While researchers initially attempted to preserve the prints, rapid snowfall and wind erosion rendered physical recovery impossible. Today, the Footsteps survive only through photographs, field sketches, and short archival footage captured during the initial investigation.
+                                <br><br>
+                                The prints’ irregular spacing and inconsistent pressure suggest either unfamiliar locomotion or a misalignment between visual perception and the terrain’s response—raising questions about whether MASO-1984-AA possessed mass in the conventional sense. Comparison with known natural formations ruled out drifting, melting, or hoarfrost collapse, leaving the prints’ formation unexplained.
+                                In a broader cultural context, the Footsteps echo global traditions of luminous or spectral travelers, from Arctic “light walkers” to stories of beings whose steps glow briefly in frozen ground. While no direct lineage exists between these legends and the 1984 event, the shared imagery of radiant presence leaving ephemeral marks reveals a deep continuity between environmental awe and the supernatural imagination.
+                                <br><br>
+                                The Footsteps of the Aurora Australis Anomaly remain a rare material bridge between a documented event and enduring mystery—a delicate trace of something both visible and intangible, left upon the edge of the known world.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- End Item 3 -->
+
+                <!-- Item 4 -->
+                <div class="itemProfile">
+                    <img src="../images/collection/AuroraDiskObject.png" alt="The green glowing Aurora Disk Object sits in the snow under a clear sky with green Aurora Australis."  class="open-modal" data-modal-target="#modal-text-AUFO">
+                    <div class="itemText">
+                        <div>
+                            <h2>MASO-1981-AUFO History</h2>
+                            <p>
+                                The Aurora Disk Object, discovered in 1981 during a period of intense Aurora Australis activity, represents the first confirmed anomaly recovered from the Antarctic region. Approximately 250 kilometers from the geographic South Pole, the object was initially observed in flight, demonstrating stable levitation and the ability to maneuver in response to strong electromagnetic and auroral conditions. These early observations suggest a purpose consistent with reconnaissance or environmental monitoring, though its origin and operators remain unknown.
+                                <br><br>
+                                The artifact’s physical characteristics are striking. A central metallic dome is encircled by a disk composed of plasma-like auroral phenomena, which continues to form and reform nightly in response to auroral intensity, despite the object being immobilized after neutralization. The metallic surface shows no seams, welds, or assembly points, maintaining uniformity and untarnished finish even after impact. Minor cosmetic damage from the neutralization event is the only evidence of physical disturbance.
+                                <br><br>
+                                Comparatively, MASO-1981-AUFO is unlike any other anomaly documented in the region. Its combination of mechanical durability, extreme magnetism, and auroral plasma integration appears unique, bridging observed technological precision with atmospheric phenomena. Researchers have noted that direct attempts at sampling or interaction are largely impossible, as the object demonstrates near-indestructibility under conventional means.
+                                <br><br>
+                                Cultural and mythological parallels can be drawn from historical reports of “celestial disks” or “sky vessels” in polar and high-latitude oral traditions, where luminous, circular objects were described as watchers or messengers of environmental and celestial cycles. While these comparisons are speculative, the alignment of MASO-1981-AUFO’s disk formation with auroral activity echoes such motifs, suggesting a symbolic resonance between human perception and natural energetic phenomena.
+                                <br><br>
+                                Despite extensive study, the Aurora Disk Object remains largely enigmatic, its intact state and ongoing plasma formation offering rare insight into the interaction of advanced materials and auroral energy. MASO-1981-AUFO continues to occupy both a scientific and mythic space, serving as a testament to the unpredictable convergence of human observation, atmospheric phenomena, and anomalies that defy conventional explanation.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div><!-- End Item 1 -->
+
+                <!-- Item 5 -->
+                <div class="itemProfile">
+                    <img src="../images/collection/TheSouthPoleOrb.png" alt="Image of the South Pole Orb floating in a circular observation room, with a skylight showing the Aurora Australis." class="open-modal" data-modal-target="#modal-text-SPH" onclick="openModal(this)">
+                    <div class="itemText">
+                        <div>
+                            <h2>MASO-1986-SPH History</h2>
+                            <p>
+                                First recorded during a period of intense solar wind activity in 1986, the South Pole Orb remains one of the most anomalous and scientifically challenging discoveries within polar research. Suspended approximately one meter above the ice at the exact geographic South Pole, the Orb appears semi-translucent yet paradoxically void-like—absorbing nearly all incident light while refracting faint, shifting luminescence consistent with the Aurora Australis. Observers describe an interior depth that seems immeasurable, as though light entering its surface is drawn inward and refracted through an undefined internal space.
+                                <br><br>
+                                Repeated field studies have identified the Orb as a possible conduit or anchor point linking geomagnetic flux and auroral energy fields. During strong auroral events, the object demonstrates distinct pulses of radiant discharge followed by rapid reabsorption of energy—phenomena accompanied by localized gravitational fluctuations and widespread electromagnetic interference. Efforts to collect samples or acquire direct readings have proven impossible, with instruments failing or spatially distorting within several meters of proximity.
+                                <br><br>
+                                The Orb’s structure defies conventional material analysis. It shows no seams, textures, or measurable surface irregularities, and remains entirely unchanged since its initial observation. Its ability to hover without apparent propulsion or environmental support, even in severe Antarctic conditions, adds further complexity to its classification.
+                                <br><br>
+                                Within cultural and comparative contexts, the South Pole Orb evokes numerous mythic parallels to “sky wells” or “polar eyes” described in early Antarctic expedition journals and certain Indigenous cosmologies, where the poles were envisioned as gateways for celestial or atmospheric spirits. While such associations remain speculative, they suggest a recurring human interpretation of auroral phenomena as sentient or intermediary forms.
+                                <br><br>
+                                Contemporary anomaly researchers regard MASO-1986-SPH as the first confirmed hazardous anomaly of its class, given its destabilizing effects on nearby equipment and terrain. Nevertheless, its continued presence at the Pole provides valuable—if unpredictable—insight into the interaction between geomagnetic energy and unknown spatial fields.
+                                <br><br>
+                                Today, the South Pole Orb endures as an object of awe and restraint: a silent, unchanging sphere at Earth’s magnetic heart, where science, myth, and the boundaries of perception converge beneath the auroral sky.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div><!-- End Item 2 -->
+
+                <!-- Item 6 -->
+                <div class="itemProfile">
+                    <img src="../images/collection/FallenStar.png" alt="Close up image of the Fallen Star glowing under a clear sky with blueish green Aurora Australis." class="open-modal" data-modal-target="#modal-text-FS-23" onclick="openModal(this)">
+                    <div class="itemText">
+                        <div>
+                            <h2>MASO-1993-FS-23 History</h2>
+                            <p>
+                                In 1993, amid an intense coronal aurora sweeping across Antarctica, researchers discovered what would become known as the Fallen Star—a perfectly spherical, metallic orb resting at the exact center of the auroral vortex. Approximately 8 centimeters in diameter, the artifact possesses a flawless mirrored surface and emits a faint, internal luminescence that synchronizes with auroral patterns visible in the surrounding sky.
+                                <br><br>
+                                Unlike typical geological or meteoritic materials, the Fallen Star displays no points of impact, surface wear, or microscopic irregularities. Its structure appears completely seamless, leading analysts to conclude it was not naturally formed. Despite numerous testing attempts—thermal, electromagnetic, and mechanical—the object remains unaltered and indestructible.
+                                <br><br>
+                                Spectroscopic readings confirm the luminescent interior resonates with electromagnetic frequencies produced during Aurora Australis events, implying a dynamic relationship between the artifact and the Earth’s magnetic field. However, its purpose or function remains undetermined.
+                                <br><br>
+                                Witness reports from the initial expedition describe the Fallen Star as “breathing with light,” shifting through subtle bands of green, violet, and blue in harmony with the auroral sky. No radiation or heat emission was detected, and the artifact’s temperature remained constant regardless of environmental exposure.
+                                <br><br>
+                                Comparative anomaly studies draw parallels between the Fallen Star and the South Pole Orb (MASO-1986-SPH)—both exhibiting indestructibility, perfect symmetry, and a dependence on auroral energy. The Fallen Star, however, is smaller and more stable, lacking the hazardous electromagnetic fields associated with MASO-1986-SPH. Minute spectrographic similarities also link it to the particulate residue (MASO-1984-AA-47) recovered during the 1984 Aurora Australis Anomaly event.
+                                <br><br>
+                                In mythological context, the Fallen Star echoes ancient polar tales of “light seeds” or “sky hearts,” celestial fragments said to descend during geomagnetic storms. While such parallels remain interpretive, they offer a symbolic lens through which to understand humanity’s enduring fascination with light phenomena that blur boundaries between cosmic, natural, and supernatural realms.
+                                <br><br>
+                                Today, the Fallen Star remains unchanged since its recovery, preserved in a controlled low-temperature, magnetically neutral chamber. Neither artifact nor meteorite, it stands as an enduring enigma—a point of perfect stillness within one of Earth’s most dynamic displays of energy.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- End Item 3 -->
+
+            </section>
+
         </main>
+
+        <!-- Hidden Content Blocks -->
+        
+
+         <div class="modal-item" id="modal-text-AA" hidden>
+                <h2 id="modal-title">MASO-1984-AA — Collection Note</h2>
+            
+                <h4>Aurora Australis Anomaly (MASO-1984-AA)</h4>
+
+                <p>Material: Unknown (auroral light) Age: Unknown Found: Antarctica, 1984</p>
+                
+                <p>First documented during an intense episode of the Aurora Australis in 1984, MASO-1984-AA is described as a semi-transparent, human-proportioned figure composed of luminous, shifting light. Witnesses—researchers stationed near the South Pole—reported the entity standing motionless in the snow before dissolving into the polar night when approached. Only a line of footprints and a faint glowing particulate, catalogued separately as MASO-1984-AA-47, remained.</p>
+
+                <p>Analysis of the recorded footage and particulate composition suggests a phenomenon mimicking the spectral qualities of auroral plasma rather than any known biological or mechanical source. Its proportions and behavior, however, imply an intentional form or manifestation. Scholars debate whether the anomaly represents an atmospheric convergence or an unknown energetic entity.</p>
+
+                <p>Due to limited firsthand data and the rarity of reoccurrence, MASO-1984-AA remains classified as an unverified anomalous manifestation, bridging the study of natural luminosity and human encounter with the unknown.</p>
+        </div>
+
+        <div class="modal-item" id="modal-text-AA-FP" hidden>
+            <h2 id="modal-title">MASO-1984-AA-FP — Collection Note</h2>
+
+            <h4>“Footsteps” of the Aurora Australis Anomaly (MASO-1984-AA-FP)</h4>
+
+            <p>Material: Snow with MASO-1984-AA-47 particulate  Date: 1984 Location: Near the South Pole, Antarctica</p>
+            
+            <p>Discovered during the 1984 sighting of the Aurora Australis Anomaly (MASO-1984-AA), these impressions—known as the Footsteps—remain one of the few tangible traces linked to the event. Each print, approximately 20 cm long and 10 cm wide, was pressed into packed snow and laced with MASO-1984-AA-47, a glowing particulate also found where the figure was observed.</p>
+            
+            <p>Their irregular depth and inconsistent spacing suggest movement across uneven terrain by an entity of roughly 45 kilograms (100 lbs). Though the prints melted within hours, photographic and film documentation preserve their form. The Footsteps continue to serve as physical evidence of the 1984 anomaly—an enduring mystery at the intersection of Antarctic environment, auroral energy, and the boundaries of human perception.</p>
+        </div>
+        
+        <div class="modal-item" id="modal-text-FS-23" hidden>
+            <h2 id="modal-title">MASO-1993-FS-23 — Collection Note</h2>
+            <h4>Fallen Star (MASO-1993-FS-23)</h4>
+
+            <p>Material: Unknown, indestructible Discovered: 1993 Location: Antarctica</p>
+
+            <p>The Fallen Star was discovered at the center of a rare coronal aurora event in Antarctica in 1993. Measuring 8 centimeters in diameter, this perfectly smooth, metallic orb emits a subtle inner luminescence that shifts in color and intensity in direct rhythm with the Aurora Australis.</p>
+
+            <p>Despite extensive study, no seams, pores, or structural irregularities have ever been identified, and all attempts at sampling or alteration have failed. The object remains completely indestructible, with its mirrored surface reflecting light while radiating a faint internal glow during periods of intense solar wind.</p>
+
+            <p>Researchers note striking similarities to earlier Antarctic anomalies, including MASO-1986-SPH and MASO-1984-AA-47, suggesting a possible connection among auroral manifestations. Whether a natural phenomenon or an artifact of unknown origin, the Fallen Star endures as one of the most stable and enigmatic materials ever recovered from polar regions.</p>
+        </div>
+        
+
+        <div class="modal-item" id="modal-text-AUFO" hidden>
+            <h2 id="modal-title">MASO-1981-AUFO — Collection Note</h2>
+            <h4>Aurora Disk Object (MASO-1981-AUFO)</h4>
+
+            <p>Material: Unknown Estimated Age: Discovered 1981 Location: ~250 km from the Geographic South Pole, Antarctica</p>
+
+            <p>Discovered in 1981 during a period of heightened Aurora Australis activity, the Aurora Disk Object (MASO-1981-AUFO) is regarded as the earliest confirmed Antarctic anomaly. The object features a central metallic dome surrounded by a reforming plasma disk that manifests nightly in correlation with auroral intensity. Its surface shows no seams or assembly marks, suggesting non-terrestrial or advanced manufacturing processes.</p>
+
+            <p>Originally observed in flight, the object was neutralized mid-air and subsequently recovered intact, bearing only minor external abrasions. Despite extensive analysis, its composition and power source remain unknown, as it exhibits extreme durability and magnetic behavior.</p>
+
+            <p>Researchers theorize that the object functioned as a scouting or environmental observation mechanism, possibly responsive to electromagnetic conditions unique to the polar region. Today, MASO-1981-AUFO remains inert but continues to generate its auroral disk during strong solar activity, serving as a striking example of the boundary between physical engineering and atmospheric anomaly.</p>
+        </div>
+
+        <div class="modal-item" id="modal-text-SPH" hidden>
+            <h2 id="modal-title">MASO-1984-SPH — Collection Note</h2>
+            <h4>The South Pole Orb (MASO-1986-SPH)</h4>
+
+            <p>Material: Unknown (Void-like) Estimated Age: Discovered 1986 Location: Geographic South Pole, Antarctica</p>
+
+            <p>First documented during a period of heightened solar activity in 1986, MASO-1986-SPH, known as The South Pole Orb, is a hovering, void-like sphere observed precisely at the magnetic center of the Antarctic plateau. Measuring approximately 1.5 meters across, it absorbs nearly all surrounding light yet refracts faint, shifting traces of the Aurora Australis within its interior.</p>
+
+            <p>Witness accounts and electromagnetic readings suggest the Orb acts as a conduit or anchor linking geomagnetic and auroral forces. During active auroral cycles, it emits measurable bursts of energy before reabsorbing them, an effect correlated with localized gravitational disturbances. No seams or physical structure have ever been recorded, and all direct sampling attempts result in instrumental failure.</p>
+
+            <p>The Orb remains unchanged since its discovery, its origin and composition unknown. It continues to represent a rare and potentially hazardous convergence of natural energy and anomalous behavior within the polar environment.</p>
+        </div>
+
+        <div class="modal-item" id="modal-text-AA-47" hidden>
+            <h2 id="modal-title">MASO-1984-AA-47 — Collection Note</h2>
+            <h4>Specimen 47 (MASO-1984-AA-47)</h4>
+
+            <p>Material: Unknown, metallic and luminescent Collected: 1984 Location: Near the South Pole, Antarctica</p>
+
+            <p>Collected during the 1984 Aurora Australis Anomaly (MASO-1984-AA) sighting, Specimen 47 consists of fine, metallic particulates—each only 1–3 millimeters long—that emit a soft auroral glow during periods of heightened geomagnetic activity. When dormant, they appear matte gray and inert.</p>
+
+            <p>Recovered from within and around the footprints attributed to MASO-1984-AA, these fragments are believed to be debris shed by the anomaly or residual material from its manifestation. Their perfect uniformity and unchanging state since recovery defy standard metallurgical classification.</p>
+
+            <p>Today, Specimen 47 represents a rare intersection of physical science and unexplained phenomena, linking a documented auroral event with enduring mystery. It remains one of the few tangible materials ever recovered from an anomalous manifestation at the South Pole.</p>
+        </div>
+
+
+
+
+        <!-- keep your existing overlay + .modal/.modal-content styles -->
+        <div class="modal" id="modal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-content" style="width:50%">
+                <button class="close-modal" aria-label="Close">x</button>
+                <div id="modal-body"></div> <!-- text gets injected inside the div-->
+            </div>
+        </div>
 
         <footer>
             <p class="footer">This is a fictitious website created purely for academic purposes. The content of this website was generated by AI.</p>
         </footer>
     </body>
     <script>
-    function showSection(section) {
-      const sections = document.querySelectorAll('.collectionSection');
-      sections.forEach(s => s.style.display = 'none');
-      document.getElementById(section).style.display = 'block';
-    }
+        // Archelogoy and Anthropology Pages
+        function showSection(section) {
+        const sections = document.querySelectorAll('.collectionSection');
+        sections.forEach(s => s.style.display = 'none');
+        document.getElementById(section).style.display = 'block';
+        }
 
-    function showSection(section) {
-      const sections = document.querySelectorAll('.collectionSection');
-      sections.forEach(s => s.style.display = 'none');
-      document.getElementById(section).style.display = 'block';
-    }
-  </script>
+        (function(){
+            const modal      = document.getElementById('modal');
+            const modalBody  = document.getElementById('modal-body');
+            const closeBtn   = modal.querySelector('.close-modal');
+            let lastTrigger  = null;
+
+            function openFrom(selector, trigger){
+                const src = document.querySelector(selector);
+                if (!src) { console.warn('Missing modal content:', selector); return; }
+                modalBody.innerHTML = src.innerHTML;        // inject text HTML
+                modal.style.display = 'block';
+                lastTrigger = trigger || null;
+                closeBtn.focus();
+                document.body.style.overflow = 'hidden';    // no scroll under modal
+            }
+
+            function closeModal(){
+                modal.style.display = 'none';
+                modalBody.innerHTML = '';
+                document.body.style.overflow = '';
+                if (lastTrigger) lastTrigger.focus();
+            }
+
+            // open on any element with data-modal-target
+            document.addEventListener('click', (e)=>{
+                const trigger = e.target.closest('[data-modal-target]');
+                if (trigger){
+                e.preventDefault();
+                openFrom(trigger.getAttribute('data-modal-target'), trigger);
+                return;
+                }
+                if (e.target === modal || e.target.closest('.close-modal')) closeModal();
+            });
+
+            document.addEventListener('keydown', (e)=>{
+                if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
+            });
+        })();
+    </script>
 </html>
